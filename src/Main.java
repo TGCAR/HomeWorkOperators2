@@ -27,6 +27,23 @@ public class Main {
 
         // Задача 3
 
+        int year = 2384;
+        if (year < 1584) {
+            System.out.println(year + " Год должен быть больше чем 1584. ");
+        } else if (year % 100 == 0) {
+            System.out.println(year + " Год не является високосным. ");
+        } else if (year % 400 == 0) {
+            System.out.println(year + " Год является високосным. ");
+        } else if (year % 4 == 0) {
+            System.out.println(year + " Год является високосным");
+        } else {
+            System.out.println(year + " Год не является високосным");
+        }
 
+        // Задача 4
+
+        int
     }
 }
+
+
