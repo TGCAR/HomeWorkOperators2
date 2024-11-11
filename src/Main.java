@@ -3,23 +3,22 @@ public class Main {
 
         // Задача 1
 
-        int clientOS = 0;
+        int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS == 1) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
         // Задача 2
 
-        int clientDevicesYear = 2010;
-        if (clientOS == 0 && clientDevicesYear <= 2015) {
+        int clientDeviceYear = 2010;
+        if (clientOS == 0 && clientDeviceYear <= 2015) {
             System.out.println("Установите блегченную версию приложения для iOS по ссылке");
         } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        if (clientOS == 1 && clientDevicesYear <= 2015) {
+        if (clientOS == 1 && clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -27,13 +26,13 @@ public class Main {
 
         // Задача 3
 
-        int year = 2384;
+        int year = 2021;
         if (year < 1584) {
             System.out.println(year + " Год должен быть больше чем 1584. ");
-        } else if (year % 100 == 0) {
-            System.out.println(year + " Год не является високосным. ");
         } else if (year % 400 == 0) {
             System.out.println(year + " Год является високосным. ");
+        } else if (year % 100 == 0) {
+            System.out.println(year + " Год не является високосным. ");
         } else if (year % 4 == 0) {
             System.out.println(year + " Год является високосным");
         } else {
